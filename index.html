@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <style>
+    /* Apply calm ocean background to entire site */
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('Background_Image.png'); /* Replace with your actual image path */
+      background-size: cover;
+      background-position: center center;      /* Keeps it centered */
+      background-repeat: no-repeat;            /* Prevents tiling */
+      background-attachment: fixed;            /* Keeps it still while scrolling */
+      min-height: 100vh;                       /* Ensures full viewport height */
+      margin: 0;
+      padding: 0;
+      color: #fff;                             /* Makes text readable */
+
+
+    }
+
+    /* Overlay effect for sections */
+    section {
+      background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark overlay */
+      padding: 60px 20px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 120px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+  
+      h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+      }
+      .portfolio-image {
+  width: 80%;         /* or use px like 600px */
+  max-width: 800px;   /* prevents it from getting too big */
+  height: auto;
+  display: block;
+  margin: 0 auto;     /* centers the image */
+}
+
+
+    
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Hello, I'm Akshaya</h1>
+    <p>I'm a Data Analyst  | SQL Enthusiast | Data Story Teller</p>
+    <a href="#projects" class="btn btn-primary mt-3">See My Work</a>
+  </section>
+
+  <!-- More sections will be added below (About, Projects, Contact) -->
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- About Section -->
+<section id="about" class="container" style="background-color: rgba(0, 0, 0, 0.6); padding: 60px 30px; border-radius: 10px; color: #fff; margin-bottom: 40px;">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <h2 class="mb-4 text-center">About Me</h2>
+      <p class="lead text-center">
+        Hello! I’m Akshaya, a curious and dedicated data enthusiast passionate about turning information into insights.
+      </p>
+      <p>
+        I thrive in examining, exploring, and solving problems — approaching challenges with patience, creativity, and a keen eye for detail. I enjoy learning new technologies, tools, techniques, and ways to think analytically.
+      </p>
+      <p>
+        Beyond skills, I value perseverance and a calm, thoughtful approach, which helps me navigate complex problems and deliver clear, meaningful results.
+      </p>
+      <p>
+        I'm often naturally guided by logic and motivated by the desire to make a small positive impact in the world.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="container" style="background-color: rgba(0, 0, 0, 0.6); padding: 60px 30px; border-radius: 10px; color: #fff; margin-bottom: 40px;">
+  <h2 class="text-center mb-5">Projects</h2>
+  <div class="row g-4">
+    
+    <!-- Project Card 1 -->
+    <section id="gender-analysis" class="py-5 bg-light text-center">
+  <div class="container">
+    <!-- Heading -->
+    <h5 class="mb-4">Lights, Camera, Inequality : The Gender Disparities among Indian Film Directors</h5>
+
+    <!-- Image -->
+    <img src="copilot.png" alt="Film reel comparison" class="img-fluid rounded shadow-sm mb-4" style="max-width: 1000px;" class="portfolio-image">
+
+    <!-- Links -->
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-2">
+        <a href="https://github.com/AkshayaMekala4569/gender-disparity-direction-indian-films" class="btn btn-outline-dark w-100" target="_blank">🔗 View Code</a>
+      </div>
+      <div class="col-md-4 mb-2">
+        <a href="https://medium.com/@akshayamekala4569/lights-camera-inequality-the-gender-disparities-among-indian-film-directors-8935d2e7f3a7" class="btn btn-outline-primary w-100" target="_blank">📝 Read Blog Post</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Project Card 2 -->
+    
+  
+
+    <!-- Project Card 3 -->
+    
+<!-- Skills & Certifications Section -->
+<section id="skills" class="container" style="background-color: rgba(0, 0, 0, 0.6); padding: 60px 30px; border-radius: 10px; color: #fff; margin-bottom: 40px;">
+  <h2 class="text-center mb-5">Skills & Certifications</h2>
+  <div class="row">
+    
+    <!-- Skills Column -->
+    <div class="col-md-6">
+      <h4 class="mb-3">Technical Skills</h4>
+      <ul class="list-unstyled">
+        <li>✔️ SQL for data querying and transformation</li>
+        <li>✔️ Python (Pandas, NumPy) for data analysis</li>
+        <li>✔️ Data cleaning and wrangling</li>
+        <li>✔️ Exploratory Data Analysis (EDA)</li>
+        <li>✔️ Data visualization with Matplotlib & Seaborn</li>
+      </ul>
+    </div>
+
+    <!-- Certifications Column -->
+    <div class="col-md-6">
+      <h4 class="mb-3">Certifications</h4>
+      <ul class="list-unstyled">
+        <li>📜 Google Data Analytics Certificate</li>
+        <li>📜 SQL for Data Science – Coursera</li>
+        <li>📜 Python for Data Analysis – Udemy</li>
+        <li>📜 Data Visualization with Python – IBM</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="container" style="background-color: rgba(0, 0, 0, 0.6); padding: 60px 30px; border-radius: 10px; color: #fff; margin-bottom: 40px;">
+  <h2 class="text-center mb-4">Get in Touch</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <ul class="list-unstyled fs-5">
+        <li><strong>Email:</strong> <a href="mailto:akshayamekala4569@gmail.com" class="text-white text-decoration-underline">akshayamekala4569@gmail.com</a></li>
+        <li><strong>Mobile:</strong> <span>+91-9985687934</span></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/AkshayaMekala4569" target="_blank" class="text-white text-decoration-underline">https://github.com/AkshayaMekala4569</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+</body>
+
+</html>
