@@ -81,44 +81,51 @@
   margin: 0 auto;     /* centers the image */
 }
    
-
-
-
-
-
-
-
-
-.skill-card:hover {
-  transform: scale(1.08);
-}
-.skills-grid {
+.skills-row {
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  margin-top: 10px;
-  padding: 0;
+  gap: 20px;
+  padding: 10px 0;
 }
 
 .skill-card {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
 }
 
 .skill-card img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
   margin-bottom: 6px;
 }
 
-.skill-card p {
-  font-size: 14px;
+.skill-card span {
+  font-size: 13px;
   font-weight: 500;
-  margin: 0;
   color: #333;
+  text-align: center;
 }
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
 
 
 
@@ -210,26 +217,26 @@
 <!-- Skills -->    
 <section id="skills">
   <h2>My Skills</h2>
-  <div class="skills-grid">
+  <div class="skills-row">
     <div class="skill-card">
       <img src="Excel-Image.png" alt="Excel">
-      <p>Excel</p>
+      <span>Excel</span>
     </div>
     <div class="skill-card">
       <img src="SQL-Image.png" alt="SQL">
-      <p>SQL</p>
+      <span>SQL</span>
     </div>
     <div class="skill-card">
       <img src="PowerBi_Image.png" alt="Power BI">
-      <p>Power BI</p>
+      <span>Power BI</span>
     </div>
     <div class="skill-card">
       <img src="Python-Image.png" alt="Python">
-      <p>Python</p>
+      <span>Python</span>
     </div>
     <div class="skill-card">
       <img src="Data-Story-Image.png" alt="Data Storytelling">
-      <p>Data Storytelling</p>
+      <span>Data Storytelling</span>
     </div>
   </div>
 </section>
@@ -264,6 +271,7 @@
 </body>
 
 </html>
+
 
 
 
